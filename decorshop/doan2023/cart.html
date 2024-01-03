@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+    <section class="header">
+        <a href="#">
+            <img src="public/images/logo.png" class="logo" alt="">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">shop</a>
+                    <div class="sub-menu">
+                        <a href="#">Đồng hồ</a>
+                        <a href="#">Tranh</a>
+                    
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <form action="search.html" id="search">
+                    <input name="key" class="input_search" type="search" placeholder=" Search" aria-label="Search">
+                    <button class="button_search" type="submit">
+                    <i class=" fas fa-search"></i>
+                    </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+    </section>
+    <section id="cart" class="section-p1" value>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <input type="hidden" id="productId" value="1" />
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="public/images/products/dongho.jpg" alt=""></td>
+                    <td>Đồng hồ treo phòng khách</td>
+                    <td>$152</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$152</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="public/images/products/dong-ho-treo-tuong.jpg" alt=""></td>
+                    <td>Đồng hồ treo tường hình học</td>
+                    <td>$65</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$65</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="public/images/products/dong-ho-treo-tuong-hinh-hoc.jpg" alt=""></td>
+                    <td>Đồng hồ treo tường 3D</td>
+                    <td>$135</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$135</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input class="input1" type="email" placeholder="Enter your Coupon">
+                <button class="button2">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totatal</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal </td>
+                    <td>$ 355</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td>$ 355</td>
+                </tr>
+            </table>
+            <button>Proceed to checkout</button>
+
+        </div>
+
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="public/images/logo.png" alt="">
+            <h4>contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco
+            </p>
+            <p><strong>Phone:</strong>+01 2222 365 /(+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong>10:00-18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="">About us</a>
+            <a href="">Delivery Information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="">Sigh In</a>
+            <a href="">View Cart</a>
+            <a href="">My Wishlist</a>
+            <a href="">Track My Order</a>
+            <a href="">Help</a>
+        </div>
+        <div class="col intall">
+            <h4>Intall App</h4>
+            <p>From App Store of Goole Play</p>
+            <div class="row">
+                <img src="public/images/pay/app.jpg" alt="" width="50px">
+                <img src="public/images/pay/play.jpg" alt="">
+            </div>
+            <p>Secrured Payment Gateways</p>
+            <img src="public/images/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>@ 2023</p>
+        </div>
+    </footer>
+    <script src="public/js/addcart.js"></script>
+</body>
+
+</html>
